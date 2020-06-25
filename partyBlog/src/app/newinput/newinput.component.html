@@ -1,0 +1,28 @@
+<form  [formGroup]="newPost" (ngSubmit)="onSubmit()">
+ <label>
+   Name:
+   <input type="text" formControlName="name">
+ </label>
+<br>
+ <label>
+   Image:
+   <input type="text" formControlName="img">
+ </label>
+<br>
+ <label>
+   Address:
+   <input type="number" formControlName="adress">
+ </label>
+<br>
+ <label>
+   Description:
+   <input type="text" formControlName="description">
+ </label>
+<br>
+  <label>
+   Website:
+   <input type="text" formControlName="website">
+ </label>
+ <br>
+ <input type="submit" class="btn btn-primary" value="Submit">
+</form>

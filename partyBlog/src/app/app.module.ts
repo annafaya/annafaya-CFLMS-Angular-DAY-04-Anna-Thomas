@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NewinputComponent } from './newinput/newinput.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ContactComponent } from './contact/contact.component';
     NavbarComponent,
     BlogPageComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NewinputComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

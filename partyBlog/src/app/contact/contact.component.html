@@ -1,1 +1,30 @@
-<p>contact works!</p>
+
+<form  [formGroup]="info" (ngSubmit)="onSubmit()">
+ 
+ <label>
+   First Name:
+   <input type="text" formControlName="firstName">
+ </label>
+<br>
+ <label>
+   Last Name:
+   <input type="text" formControlName="lastName">
+ </label>
+<br>
+ <label>
+   Age:
+   <input type="number" formControlName="age">
+ </label>
+<br>
+ <label>
+   Email:
+   <input type="text" formControlName="email">
+ </label>
+<br>
+  <label>
+   Question:
+   <input type="text" formControlName="question">
+ </label>
+ <br>
+ <input type="submit" class="btn btn-primary" value="Submit">
+</form>

@@ -1,2 +1,12 @@
-<h1>The BEST places to party in Vienna!</h1>
+<h1 class="">The BEST places to party in Vienna!</h1>
 
+<div class="d-flex flex-wrap">
+
+<div *ngFor="let party of locations" class="col-4">
+        <h3>{{party.name}}</h3>
+        <img class="w-100" src="{{party.img}}">
+        <p>{{party.adress}}</p>
+        <p>{{party.description}}</p>
+        <p>{{party.website}}</p>
+</div>
+</div>

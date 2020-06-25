@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { locations } from '../data';
 
 @Component({
   selector: 'app-blog-page',
@@ -7,25 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPageComponent implements OnInit {
 
-locations = [
-{
-	name: 'Fledermaus', },
-{ 
-	name: 'Fluc', },
-{
-	name: 'Das Werk',
-},
-{   
-	name: 'Grelle Forelle'
-},
-{
-	name: 'Flex',
-},
-{
-	name: 'Weberknecht',
-}
-]
-
+locations = locations
 
   constructor() { }
 
